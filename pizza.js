@@ -26,7 +26,7 @@ function order(){
     console.log("Order received by " + name.value);
     console.log("Order is a supreme pizza");
   }
-  else if (pep == true && sausage == true)
+  else if (pep == true && sausage == true && veg == false)
   {
     console.log("Order received by " + name.value);
     console.log("Order is a meatlovers pizza");
