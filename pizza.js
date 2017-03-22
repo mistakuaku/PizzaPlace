@@ -37,4 +37,9 @@ function order(){
     console.log("Order received by " + name.value);
     console.log("Order is a cheese pizza");
   }
+  else if(veg == true && pep == false && sausage == false)
+  {
+    console.log("Order received by " + name.vaule);
+    console.log("Order is a veggie pizza");
+  }
 }
