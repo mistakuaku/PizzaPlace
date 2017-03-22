@@ -26,20 +26,29 @@ function order(){
     console.log("Order received by " + name.value);
     console.log("Order is a supreme pizza");
   }
-  else if (pep == true && sausage == true && veg == false)
-  {
+  else if (pep && sausage && !veg) //short hand for the above syntax
+  {                               //since veg and the others are booleans
     console.log("Order received by " + name.value);
     console.log("Order is a meatlovers pizza");
   }
-
-  else if(veg == false && pep == false && sausage == false)
+  else if(!veg && !pep && !sausage)
   {
     console.log("Order received by " + name.value);
     console.log("Order is a cheese pizza");
   }
-  else if(veg == true && pep == false && sausage == false)
+  else if(veg && !pep && !sausage)
   {
     console.log("Order received by " + name.vaule);
     console.log("Order is a veggie pizza");
+  }
+  else if(!veg && pep && !sausage)
+  {
+    console.log("Order recieved by " + name.value);
+    console.log("Order is a pepperoni pizza");
+  }
+  else if(!veg && !pep && sausage)
+  {
+    console.log("Order received by " + name.value);
+    console.log("Order is a sausage pizza");
   }
 }
